@@ -4,7 +4,6 @@
   const $ = (id) => document.getElementById(id);
 
   const intro = $('intro');
-  const settingsToggle = $('settingsToggle');
   const settingsPanel = $('settingsPanel');
   const audio = $('audioPlayer');
   const eyeImage = $('eyeImage');
@@ -133,11 +132,6 @@
 
   // Welcome screen
   window.setTimeout(() => intro.classList.add('hide'), 4000);
-
-  // Settings panel
-  settingsToggle.addEventListener('click', () => {
-    settingsPanel.hidden = !settingsPanel.hidden;
-  });
 
   $('settingsClose').addEventListener('click', () => {
     settingsPanel.hidden = true;
