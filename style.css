@@ -309,3 +309,8 @@ button { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }
+
+/* Hide only the temporary settings button; preserve all functionality */
+.settings-button {
+  display: none !important;
+}
