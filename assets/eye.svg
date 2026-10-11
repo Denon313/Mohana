@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#312454"/>
+      <stop offset=".55" stop-color="#17162f"/>
+      <stop offset="1" stop-color="#49346a"/>
+    </linearGradient>
+    <radialGradient id="iris">
+      <stop offset="0" stop-color="#e4c6ff"/>
+      <stop offset=".18" stop-color="#9f7ed9"/>
+      <stop offset=".52" stop-color="#5b478f"/>
+      <stop offset=".8" stop-color="#342953"/>
+      <stop offset="1" stop-color="#171329"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#d9b8e8"/>
+      <stop offset="1" stop-color="#765a91"/>
+    </linearGradient>
+    <clipPath id="eyeClip">
+      <path d="M28 218 Q200 55 372 218 Q200 385 28 218Z"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="440" fill="url(#bg)"/>
+  <circle cx="70" cy="70" r="1.5" fill="#e6d4ff"/>
+  <circle cx="333" cy="95" r="2" fill="#e6d4ff"/>
+  <circle cx="315" cy="345" r="1.5" fill="#e6d4ff"/>
+  <circle cx="54" cy="340" r="2" fill="#e6d4ff"/>
+  <path d="M20 220 Q200 35 380 220" fill="none" stroke="url(#skin)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M28 218 Q200 55 372 218 Q200 385 28 218Z" fill="#eee4f6"/>
+  <g clip-path="url(#eyeClip)">
+    <rect x="20" y="50" width="360" height="340" fill="#f4eafa"/>
+    <circle cx="200" cy="220" r="91" fill="url(#iris)"/>
+    <circle cx="200" cy="220" r="48" fill="#100d20"/>
+    <circle cx="174" cy="184" r="20" fill="#fff" opacity=".9"/>
+    <circle cx="225" cy="245" r="9" fill="#fff" opacity=".65"/>
+    <path d="M30 115 Q200 42 370 115 L380 40 L20 40Z" fill="#1b132d" opacity=".96"/>
+    <path d="M26 150 Q200 72 374 150" fill="none" stroke="#291a3d" stroke-width="15"/>
+    <path d="M32 294 Q200 360 368 294" fill="none" stroke="#a87db4" stroke-width="7" opacity=".6"/>
+  </g>
+  <path d="M28 218 Q200 385 372 218" fill="none" stroke="#c59fdb" stroke-width="7" stroke-linecap="round"/>
+  <path d="M40 196 Q20 171 14 155 M66 175 Q53 147 53 132 M96 151 Q87 128 92 112 M360 196 Q380 171 386 155 M334 175 Q347 147 347 132 M304 151 Q313 128 308 112" fill="none" stroke="#20162e" stroke-width="7" stroke-linecap="round"/>
+  <text x="200" y="410" text-anchor="middle" font-family="sans-serif" font-size="12" letter-spacing="4" fill="#d8c0ff" opacity=".7">YOUR LITTLE UNIVERSE</text>
+</svg>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090b20">
+  <meta name="description" content="یک هدیه کوچک و رؤیایی برای پروانه فسقلی">
+  <title>برای پروانه فسقلی 🦋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" id="sky" aria-hidden="true"></div>
+  <div class="nebula nebula-one"></div>
+  <div class="nebula nebula-two"></div>
+
+  <div class="intro" id="intro">
+    <div class="intro-content">
+      <span class="intro-butterfly">🦋</span>
+      <p class="intro-small">یک سورپرایز کوچولو برای تو</p>
+      <h1>روزت مبارک</h1>
+      <h2>پروانه فسقلی <span>🫠💜</span></h2>
+      <div class="intro-line"><span></span></div>
+      <p class="intro-bottom">آماده‌ای برای یک حس قشنگ؟</p>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a href="#home" class="brand"><span>✦</span> little universe</a>
+    <button id="settingsToggle" class="settings-button" type="button">⚙ تنظیمات موقت</button>
+  </header>
+
+  <aside class="settings-panel" id="settingsPanel" hidden>
+    <div class="settings-heading">
+      <h2>تنظیمات موقت</h2>
+      <button id="settingsClose" class="close-button" type="button" aria-label="بستن">×</button>
+    </div>
+
+    <p class="settings-note">عکس و آهنگ رو از گوشی انتخاب کن و قبل از انتشار نهایی تستشون کن.</p>
+
+    <label class="upload-label" for="eyeUpload">🖼️ انتخاب عکس چشم</label>
+    <input id="eyeUpload" type="file" accept="image/*">
+    <div class="file-name" id="eyeFileName">هنوز عکسی انتخاب نشده</div>
+
+    <label class="upload-label" for="musicUpload">🎵 انتخاب آهنگ</label>
+    <input id="musicUpload" type="file" accept="audio/*">
+    <div class="file-name" id="musicFileName">هنوز آهنگی انتخاب نشده</div>
+
+    <label class="upload-label" for="messageInput">💌 متن زیر عکس</label>
+    <input id="messageInput" type="text" maxlength="100" placeholder="مثلاً: دنیای کوچولوی قشنگ من">
+
+    <button id="saveSettings" class="save-button" type="button">ذخیره تنظیمات در همین مرورگر</button>
+    <p class="settings-warning">این تنظیمات فقط روی همین مرورگر ذخیره می‌شوند؛ برای نمایش عکس و آهنگ به همه، فایل‌های نهایی باید داخل پروژه قرار بگیرند.</p>
+  </aside>
+
+  <main id="home" class="main-content">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-star">✧</span> A LITTLE GIFT FOR YOU <span class="eyebrow-star">✧</span></div>
+      <h1 class="main-title">برای <span>پروانه فسقلی</span></h1>
+      <p class="subtitle">بعضی چیزای کوچیک، قشنگ‌ترین حس‌های دنیان...</p>
+
+      <div class="portrait-wrap">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-glow"></div>
+        <div class="portrait-frame">
+          <img id="eyeImage" src="assets/eye.svg" alt="تصویر چشم" class="eye-image">
+          <div class="image-overlay"><span>✦</span></div>
+        </div>
+        <span class="floating-star star-a">✧</span>
+        <span class="floating-star star-b">✦</span>
+        <span class="floating-heart">♡</span>
+      </div>
+
+      <p class="personal-message" id="personalMessage">بعضی چشم‌ها، خودشون یه دنیای قشنگن 💜</p>
+      <div class="tiny-divider"><span>✦</span></div>
+
+      <section class="music-card" aria-label="پخش‌کننده موسیقی">
+        <div class="music-top">
+          <div class="music-cover" id="musicCover"><span>♫</span></div>
+          <div class="track-info">
+            <span class="track-label">A SONG FOR YOU</span>
+            <h2 id="trackTitle">یه آهنگ برای تو</h2>
+            <p id="trackArtist">با یه حس قشنگ و آروم 💜</p>
+          </div>
+          <div class="music-sparkle">✧</div>
+        </div>
+
+        <audio id="audioPlayer" preload="metadata"></audio>
+
+        <div class="progress-area">
+          <input id="progressBar" type="range" min="0" max="100" value="0" step="0.1" aria-label="موقعیت آهنگ">
+          <div class="time-row"><span id="currentTime">00:00</span><span id="duration">00:00</span></div>
+        </div>
+
+        <div class="player-controls">
+          <button id="restartButton" class="side-control" type="button" aria-label="شروع دوباره">↺</button>
+          <button id="playButton" class="play-button" type="button" aria-label="پخش آهنگ"><span id="playIcon">▶</span></button>
+          <button id="muteButton" class="side-control" type="button" aria-label="قطع صدا">♫</button>
+        </div>
+        <p id="playerHint" class="player-hint">برای پخش، آهنگ رو از تنظیمات انتخاب کن 🎧</p>
+      </section>
+
+      <div class="closing-note">
+        <span>☾</span>
+        <p>امیدوارم امروزت به قشنگی لبخندت باشه</p>
+        <span>✧</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    made with a little bit of magic <span>♡</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
