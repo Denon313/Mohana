@@ -16,6 +16,13 @@
   let selectedImageUrl = null;
   let selectedAudioUrl = null;
 
+  // Public default music hosted with the website
+  const defaultAudioUrl = 'assets/audio/mohana.mp3';
+  audio.src = defaultAudioUrl;
+  $('trackTitle').textContent = 'Naji - Tocka';
+  $('trackArtist').textContent = 'با یه حس قشنگ و آروم 💜';
+  playerHint.textContent = 'برای شنیدن آهنگ، دکمه پخش رو بزن 🎧';
+
   // Persistent browser database
   let db = null;
 
@@ -225,9 +232,8 @@
 
       const savedAudio = await readFile('audio');
 
-      if (savedAudio && savedAudio.blob) {
-        showAudio(savedAudio.blob, savedAudio.name || 'آهنگ ذخیره‌شده');
-      }
+      // Keep the public default track unless the visitor chooses a new one.
+      // Old browser-specific audio uploads must not override the shared track.
 
       if (savedImage || savedAudio) {
         playerHint.textContent = 'عکس و آهنگ ذخیره‌شده بازیابی شدن. خوش برگشتی 💜';
